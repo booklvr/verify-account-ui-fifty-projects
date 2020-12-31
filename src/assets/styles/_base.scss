@@ -1,7 +1,13 @@
-@mixin full-page {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  @include center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
 }
