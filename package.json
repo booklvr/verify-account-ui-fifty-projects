@@ -1,0 +1,41 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for react app with sass",
+  "main": "index.js",
+  "author": "Nick de Waal",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel public/index.html --open",
+    "build": "parcel build public/index.html --public-url ./",
+    "test:eslint": "eslint src/ --ext .js --ext .jsx",
+    "pretest": "yarn run test:eslint",
+    "precommit": "lint-staged",
+    "clean": "rimraf ./dist",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.16.0",
+    "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
+    "react-hot-loader": "^4.13.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,json,scss,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
