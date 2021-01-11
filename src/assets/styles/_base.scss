@@ -4,25 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  transition: all 0.5s ease-in;
-
-  &.dark {
-    background-color: #111;
-    color: $primary-color;
-
-    .hour,
-    .minute,
-    .circle {
-      background-color: white !important;
-    }
-
-    .time,
-    .date {
-      color: white !important;
-    }
-  }
-}
 
 body {
   font-family: 'Heebo', sans-serif;
@@ -33,9 +14,5 @@ body {
 #root {
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   margin: 0;
 }
