@@ -1,13 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo:300&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  transition: all 0.5s ease-in;
+
+  &.dark {
+    background-color: #111;
+    color: $primary-color;
+
+    .hour,
+    .minute,
+    .circle {
+      background-color: white !important;
+    }
+
+    .time,
+    .date {
+      color: white !important;
+    }
+  }
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  @include center;
+  font-family: 'Heebo', sans-serif;
   height: 100vh;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
   margin: 0;
 }
