@@ -1,7 +1,8 @@
 import React from 'react'
+import ThemeClock from './components/ThemeClock'
 
 const App = () => {
-  return <h1>BoilerPlate</h1>
+  return <ThemeClock />
 }
 
 export default App
