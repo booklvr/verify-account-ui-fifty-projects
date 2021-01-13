@@ -1,7 +1,8 @@
 import React from 'react'
+import ContentPlaceholder from './components/ContentPlaceholder'
 
 const App = () => {
-  return <div>React Boilerplate</div>
+  return <ContentPlaceholder />
 }
 
 export default App
