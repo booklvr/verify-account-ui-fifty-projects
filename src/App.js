@@ -1,8 +1,8 @@
 import React from 'react'
-import ContentPlaceholder from './components/ContentPlaceholder'
+import placeholder from './components/placeholder'
 
 const App = () => {
-  return <ContentPlaceholder />
+  return <placeholder />
 }
 
 export default App
