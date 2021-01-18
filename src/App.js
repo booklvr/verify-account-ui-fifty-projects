@@ -1,8 +1,8 @@
 import React from 'react'
-import placeholder from './components/placeholder'
+import VerifyAccountUI from './components/VerifyAccountUI'
 
 const App = () => {
-  return <placeholder />
+  return <VerifyAccountUI />
 }
 
 export default App
